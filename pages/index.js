@@ -17,7 +17,7 @@ export default function Home(props) {
 
 export async function getServerSideProps(context) {
   // Get external data from the file system, API, DB, etc.
-  const res  = await fetch("http://localhost:13464/api/blog?page=1&perPage=10");
+  const res  = await fetch("http://venus.health/api/blog?page=1&perPage=10");
   const data = await res.json();
 
   // The value of the `props` key will be
